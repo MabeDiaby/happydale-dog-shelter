@@ -43,10 +43,8 @@ main a {
 
 .dog-list-container {
   /* your code */
-  /* display: flex; */
   display:grid;
   grid-template-columns: auto auto auto;
-  /* flex-direction: row; */
 }
 
 .fluid-text {
