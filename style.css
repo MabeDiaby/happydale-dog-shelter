@@ -15,15 +15,24 @@ body {
 
 header {
   /* your code */
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
 }
 
 main {
   /* your code */
+  margin-top: 10px;
+  display: inline-flex;
+  
 }
 main nav {
   border: .1rem solid purple;
   padding: 1rem;
   /* your code */
+  display: flex;
+  flex-direction: column;
 }
 main a {
   width: 5rem;
@@ -34,6 +43,10 @@ main a {
 
 .dog-list-container {
   /* your code */
+  /* display: flex; */
+  display:grid;
+  grid-template-columns: auto auto auto;
+  /* flex-direction: row; */
 }
 
 .fluid-text {
