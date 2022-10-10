@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,300,400,500,800&display=swap');
-
-* {
-  font-family: 'Montserrat';
+*{
+  /* font-family: 'Montserrat'; */
   margin: 0;
   box-sizing: border-box;
+  transition: all .15s ease;
 }
 body {
-  border: .1rem solid turquoise;
+  /* border: .1rem solid turquoise; */
   padding: 1rem;
-  background-color: rgb(62, 59, 59);
-  color: white;
+  background-color: var(--background);
+  color: var(--color-primary);
   height: 100vh;
 }
 
@@ -28,7 +27,7 @@ main {
   
 }
 main nav {
-  border: .1rem solid purple;
+  /* border: .1rem solid purple; */
   padding: 1rem;
   /* your code */
   display: flex;
@@ -36,7 +35,7 @@ main nav {
 }
 main a {
   width: 5rem;
-  border: .1rem solid peru;
+  border: .1rem solid var(--color-secondary);
   text-align: center;
   margin: .5rem 0rem;
 }
@@ -46,6 +45,68 @@ main a {
   display:grid;
   grid-template-columns: auto auto auto;
 }
+
+/* edit */
+
+/* store dark and light colors */
+
+:root {
+  --color-primary: #37474f;
+  --color-secondary: #dee4e7;
+  --background: #FFFFFF;
+}
+
+.darkmode {
+  --color-primary: #FFFFFF;
+  --color-secondary: #facefa;
+  --background: rgb(18, 17, 17);
+}
+
+
+.darkModeToggle {
+  background: transparent;
+  outline: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body.darkmode .fa-sun {
+  display: none;
+}
+
+body.darkmode .fa-moon {
+  display: block;
+}
+
+.fa-moon {
+  display: none;
+}
+
+button {
+  font-size: 30px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  /* background: #37474f; */
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 450px;
+}
+
+button:hover {
+  color: #dee4e7;
+}
+
+/* edit */
 
 .fluid-text {
   font-size: 2rem;
@@ -58,7 +119,7 @@ main a {
 .single-dog-card {
   padding: 1rem;
   max-width: 20rem;
-  border: 2px solid peru;
+  border: 2px solid var(--color-secondary);
   border-radius: 1rem;
   margin: 1rem;
 }
@@ -69,5 +130,6 @@ main a {
 }
 
 a {
-  color: white;
+  color: var(--color-primary);
+  text-decoration: none;
 }

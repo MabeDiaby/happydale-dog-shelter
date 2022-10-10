@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happydale Dog Shelter</title>
-  <script src="https://kit.fontawesome.com/c0cf62ce4a.js" crossorigin="anonymous" defer></script>
 
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/c0cf62ce4a.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- stylesheet -->
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body >
+  <section>
   <header>
     <h1 class="fluid-text">Happydale Dog Shelter</h1>
     <nav class="desktop-nav">Home | About | Contact | Dogs</nav>
@@ -49,5 +53,18 @@
         <p>Zeus is a German Shepherd that loves chasing squirrels.  It makes him feel more like a deity.</p>
       </article>
     </section>
+
+    <button
+      id="darkModeToggles"
+      class="darkModeToggles"
+      aria-label="dark mode toggles"
+      type="button"
+    >
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+  </button>
+
+  </section>
+    <script src="/darkmode.js"></script>
 </body>
 </html>
